@@ -2,7 +2,8 @@
 
 - 予算管理をするアプリケーション
 
-# 🧭技術（予定）
+# 🧭技術
+※ 相性が悪かったりした場合は随時更新
 - Frontend
   - [MAUI](https://learn.microsoft.com/ja-jp/dotnet/maui/?view=net-maui-8.0)
   - Blazor
