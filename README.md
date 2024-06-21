@@ -10,4 +10,7 @@
   - [ASP.NET Core](https://dotnet.microsoft.com/ja-jp/apps/aspnet)
   - [.NET Aspire](https://learn.microsoft.com/ja-jp/dotnet/aspire/)
 - Database
-  - [Cockroach DB](https://cockroachlabs.cloud/)
+  - MongoDB
+  - ~[Cockroach DB](https://cockroachlabs.cloud/)~
+    - Entity Framework Coreによるデータベースのマイグレーションが.NET Aspireと相性悪い。
+    - スキーマレスのDocument DBじゃないと厳しそうだ。
