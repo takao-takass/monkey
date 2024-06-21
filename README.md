@@ -5,6 +5,7 @@
 # 🧭技術（予定）
 - Frontend
   - [MAUI](https://learn.microsoft.com/ja-jp/dotnet/maui/?view=net-maui-8.0)
+  - Blazor
 - Backend
   - [ASP.NET Core](https://dotnet.microsoft.com/ja-jp/apps/aspnet)
   - [.NET Aspire](https://learn.microsoft.com/ja-jp/dotnet/aspire/)
@@ -13,6 +14,6 @@
 
 # 進行予定
 * バックエンド（Aspire+ASP.NET Core WebAPI）
-* フロント（Blazor）
-* フロント（MAUI）
+* ブラウザ版フロント（Blazor）
+* ネイティブ版フロント（MAUI）
 * 運用環境構築
