@@ -5,7 +5,7 @@
 # 🧭技術（予定）
 ### 使用技術
 - Frontend
-  - [Avalonia UI](https://avaloniaui.net/)
+  - [MAUI](https://learn.microsoft.com/ja-jp/dotnet/maui/?view=net-maui-8.0)
 - Backend
   - [ASP.NET Core](https://dotnet.microsoft.com/ja-jp/apps/aspnet)
 - Database
