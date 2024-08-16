@@ -9,6 +9,7 @@ public class MonkeyDbContext : DbContext
     {
     }
 
-    public DbSet<Database.User.User> Users { get; set; }
+    public DbSet<User.User> Users { get; set; }
 
+    public DbSet<Payment.Payment> Payments { get; set; }
 }
