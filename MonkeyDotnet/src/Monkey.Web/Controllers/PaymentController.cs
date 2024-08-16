@@ -16,7 +16,7 @@ public class PaymentController(
     [HttpPut, Route("/api/payments")]
     public async Task<IActionResult> Create([FromQuery] int userId, [FromBody] int yen)
     {
-        if(yen <= 0)
+        if (yen <= 0)
         {
             return BadRequest("‹àŠz‚Í0‚æ‚è‘å‚«‚­‚È‚¯‚ê‚Î‚È‚è‚Ü‚¹‚ñB");
         }

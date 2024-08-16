@@ -4,7 +4,7 @@ using Monkey.Web.infrastructures.BaseClasses;
 
 namespace Monkey.Web.Service;
 
-public class UserService(MonkeyDbContext dbContext): ServiceBase
+public class UserService(MonkeyDbContext dbContext) : ServiceBase
 {
 
     public async Task<IEnumerable<Database.User.User>> GetUsersAsync()

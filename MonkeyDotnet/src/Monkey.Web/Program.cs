@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Monkey.Web.Database;
 using Monkey.Web.infrastructures.BaseClasses;
-using Monkey.Web.Service;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -4,7 +4,7 @@ using Monkey.Web.infrastructures.BaseClasses;
 
 namespace Monkey.Web.Service;
 
-public class PaymentService(MonkeyDbContext dbContext): ServiceBase
+public class PaymentService(MonkeyDbContext dbContext) : ServiceBase
 {
 
     public async Task<IEnumerable<Database.Payment.Payment>> GetPaymentsThinWeekAsync(int userId)
