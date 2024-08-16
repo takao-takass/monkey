@@ -2,49 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monkey.AppHost", "src\Monkey.AppHost\Monkey.AppHost.csproj", "{20FA4941-2B70-4CF5-935B-A190E50D589D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monkey.ServiceDefaults", "src\Monkey.ServiceDefaults\Monkey.ServiceDefaults.csproj", "{1445A221-B412-4FE2-892C-14DCFE667A7F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monkey.ApiService", "src\Monkey.ApiService\Monkey.ApiService.csproj", "{D654AC52-F67D-461A-B91B-BA8BD7B4D208}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monkey.Web", "src\Monkey.Web\Monkey.Web.csproj", "{D9CF9141-C9E9-499C-B36F-5749DE9CB4F8}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monkey.Tests", "src\Monkey.Tests\Monkey.Tests.csproj", "{1B559CB4-1941-44F3-961A-CFAB45DB2B98}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monkey.WebApi", "src\Monkey.WebApi\Monkey.WebApi.csproj", "{907C228E-71DD-4F7B-B321-47CADC96B7E5}"
-EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{20FA4941-2B70-4CF5-935B-A190E50D589D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20FA4941-2B70-4CF5-935B-A190E50D589D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20FA4941-2B70-4CF5-935B-A190E50D589D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20FA4941-2B70-4CF5-935B-A190E50D589D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1445A221-B412-4FE2-892C-14DCFE667A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1445A221-B412-4FE2-892C-14DCFE667A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1445A221-B412-4FE2-892C-14DCFE667A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1445A221-B412-4FE2-892C-14DCFE667A7F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D654AC52-F67D-461A-B91B-BA8BD7B4D208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D654AC52-F67D-461A-B91B-BA8BD7B4D208}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D654AC52-F67D-461A-B91B-BA8BD7B4D208}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D654AC52-F67D-461A-B91B-BA8BD7B4D208}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D9CF9141-C9E9-499C-B36F-5749DE9CB4F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9CF9141-C9E9-499C-B36F-5749DE9CB4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9CF9141-C9E9-499C-B36F-5749DE9CB4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9CF9141-C9E9-499C-B36F-5749DE9CB4F8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B559CB4-1941-44F3-961A-CFAB45DB2B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B559CB4-1941-44F3-961A-CFAB45DB2B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B559CB4-1941-44F3-961A-CFAB45DB2B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B559CB4-1941-44F3-961A-CFAB45DB2B98}.Release|Any CPU.Build.0 = Release|Any CPU
-		{907C228E-71DD-4F7B-B321-47CADC96B7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{907C228E-71DD-4F7B-B321-47CADC96B7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{907C228E-71DD-4F7B-B321-47CADC96B7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{907C228E-71DD-4F7B-B321-47CADC96B7E5}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
