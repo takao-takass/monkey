@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Monkey.Web.Database;
+using Monkey.Web.infrastructures.BaseClasses;
+using Monkey.Web.Service;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +22,27 @@ builder.Configuration
 builder.Services.AddDbContext<MonkeyDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("PsqlConnection")));
 
+var assembly = Assembly.GetExecutingAssembly();
+
+// Register all classes that inherit from ServiceBase
+var serviceBaseDerivedTypes = assembly.GetTypes()
+    .Where(type => type.IsClass && !type.IsAbstract && type.IsSubclassOf(typeof(ServiceBase)))
+    .ToArray();
+foreach (var type in serviceBaseDerivedTypes)
+{
+    builder.Services.AddScoped(type);
+}
+
+// Setup swagger
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "monkey API",
+        Version = "v1"
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -35,6 +59,12 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "monkey API V1");
+});
 
 app.MapControllerRoute(
     name: "default",
