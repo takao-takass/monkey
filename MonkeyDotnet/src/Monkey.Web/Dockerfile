@@ -7,7 +7,6 @@ WORKDIR /app
 EXPOSE 8080
 EXPOSE 8081
 
-
 # このステージは、サービス プロジェクトのビルドに使用されます
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
@@ -15,8 +14,7 @@ WORKDIR /src
 COPY ["Monkey.Web.csproj", "src/Monkey.Web/"]
 RUN dotnet restore "src/Monkey.Web/Monkey.Web.csproj"
 COPY . .
-WORKDIR "/src/Monkey.Web"
-RUN dotnet build "Monkey.Web/Monkey.Web.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "Monkey.Web.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # このステージは、最終ステージにコピーするサービス プロジェクトを公開するために使用されます
 FROM build AS publish
